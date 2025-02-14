@@ -1,10 +1,84 @@
-.card {
-    transition: transform 0.3s;
+/* Estilos generales */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
 }
-.card:hover {
-    transform: scale(1.05);
+
+/* Barra de navegación */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px 20px;
 }
-.price {
-    font-weight: bold;
-    color: green;
+
+nav .logo a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5em;
 }
+
+nav .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+nav .nav-links li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav .search-bar {
+    display: flex;
+    align-items: center;
+}
+
+nav .search-bar input {
+    padding: 5px;
+    border: none;
+    border-radius: 3px;
+}
+
+nav .search-bar button {
+    background-color: #555;
+    border: none;
+    color: #fff;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 3px;
+    margin-left: 5px;
+}
+
+nav .cart a {
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+/* Carrusel de imágenes */
+.carousel {
+    position: relative;
+    max-width: 100%;
+    margin: 20px 0;
+    overflow: hidden;
+}
+
+.carousel-item {
+    display: none;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: auto;
+}
+
+.carousel-item.active {
+    display: block;
+}
+
+.carousel-control {
+    position: absolute;
+    top:1

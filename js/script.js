@@ -4,10 +4,6 @@ document.getElementById("searchInput").addEventListener("keyup", function() {
 
     products.forEach(product => {
         let name = product.getAttribute("data-name").toLowerCase();
-        if (name.includes(filter)) {
-            product.style.display = "block";
-        } else {
-            product.style.display = "none";
-        }
+        product.style.display = name.includes(filter) ? "block" : "none";
     });
 });
